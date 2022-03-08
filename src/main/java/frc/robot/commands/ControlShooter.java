@@ -5,7 +5,6 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import frc.robot.OI;
 import frc.robot.Robot;
 import frc.robot.RobotMap;
 
@@ -25,9 +24,9 @@ public class ControlShooter extends Command {
   @Override
   protected void execute() {
     if (Robot.oi.getAButton())
-    Robot.shooter.setShooter(RobotMap.baseShootSpeed);
+      Robot.shooter.setShooter(RobotMap.baseShootSpeed);
     else
-    Robot.shooter.setShooter(0);
+      Robot.shooter.setShooter(0);
   }
 
   // Make this return true when this Command no longer needs to run execute()
@@ -38,10 +37,12 @@ public class ControlShooter extends Command {
 
   // Called once after isFinished returns true
   @Override
-  protected void end() {}
+  protected void end() {
+  }
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
-  protected void interrupted() {}
+  protected void interrupted() {
+  }
 }

@@ -23,7 +23,7 @@ public class ControlIntake extends Command {
   @Override
   protected void execute() {
     if (Robot.oi.getBButton())
-    Robot.intake.setIntake(RobotMap.baseIntakeSpeed);
+    Robot.intake.setIntake(-RobotMap.baseIntakeSpeed);
     else
     Robot.intake.setIntake(0);
   }

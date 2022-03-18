@@ -20,13 +20,13 @@ public class RobotMap {
 	public static final int rearLeftChannel = 0;
   public static final int frontLeftChannel = 1;
   //#TODO set shooter channels to real values
-  public static final int shooterChannel1 = 4;
-  public static final int shooterChannel2 = 5;
-  public static final int intakeChannel = 6;
+  public static final int shooterChannel1 = 5;
+  public static final int shooterChannel2 = 6;
+  public static final int intakeChannel = 4;
 	public static final int xbControllerPort = 0;
   public static final double baseDriveSpeed = 0.5;
   public static final double baseShootSpeed = 1;
-  public static final double baseIntakeSpeed = 1;
+  public static final double baseIntakeSpeed = 0.75;
 
 
   // If you are using multiple modules, make sure to define both the port

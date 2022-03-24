@@ -8,25 +8,24 @@ import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 import frc.robot.RobotMap;
 
-public class ControlShooter extends Command {
-  public ControlShooter() {
+public class ControlClimber extends Command {
+  public ControlClimber() {
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
-    requires(Robot.shooter);
+    requires(Robot.climber);
   }
 
   // Called just before this Command runs the first time
   @Override
-  protected void initialize() {
-  }
+  protected void initialize() {}
 
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    if (Robot.oi.getXButton())
-      Robot.shooter.setShooter(RobotMap.baseShootSpeed);
+    if(Robot.oi.getXButton())
+    Robot.climber.setClimber(RobotMap.baseClimbSpeed);
     else
-      Robot.shooter.setShooter(0);
+    Robot.climber.setClimber(0);
   }
 
   // Make this return true when this Command no longer needs to run execute()
@@ -37,12 +36,10 @@ public class ControlShooter extends Command {
 
   // Called once after isFinished returns true
   @Override
-  protected void end() {
-  }
+  protected void end() {}
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
-  protected void interrupted() {
-  }
+  protected void interrupted() {}
 }

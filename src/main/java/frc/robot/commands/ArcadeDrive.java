@@ -23,6 +23,8 @@ public class ArcadeDrive extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
+    // Robot.driveTrain.setLeftMotors(Robot.oi.getStickY() + Robot.oi.getStickX());
+    // Robot.driveTrain.setRightMotors(Robot.oi.getStickY() - Robot.oi.getStickX());
     Robot.driveTrain.setLeftMotors(Robot.oi.getTriggerTotal() + Robot.oi.getStickX());
     Robot.driveTrain.setRightMotors(Robot.oi.getTriggerTotal() - Robot.oi.getStickX());
   }

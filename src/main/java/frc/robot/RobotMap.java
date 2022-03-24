@@ -15,18 +15,21 @@ public class RobotMap {
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
   // public static int rightMotor = 2;
-	public static final int rearRightChannel = 2;
-	public static final int frontRightChannel = 3;
-	public static final int rearLeftChannel = 0;
-  public static final int frontLeftChannel = 1;
+
+	public static final int rearRightChannel = 0;
+	public static final int frontRightChannel = 1;
+	public static final int rearLeftChannel = 2;
+  public static final int frontLeftChannel = 3;
   //#TODO set shooter channels to real values
   public static final int shooterChannel1 = 5;
   public static final int shooterChannel2 = 6;
   public static final int intakeChannel = 4;
+  public static final int climberChannel = 4;
 	public static final int xbControllerPort = 0;
-  public static final double baseDriveSpeed = 0.5;
-  public static final double baseShootSpeed = 1;
-  public static final double baseIntakeSpeed = 0.75;
+  public static double baseDriveSpeed = 0.5;
+  public static double baseShootSpeed = 1;
+  public static double baseIntakeSpeed = 0.5;
+  public static double baseClimbSpeed = 1;
 
 
   // If you are using multiple modules, make sure to define both the port

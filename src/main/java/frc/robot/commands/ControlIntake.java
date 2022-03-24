@@ -9,6 +9,11 @@ import frc.robot.Robot;
 import frc.robot.RobotMap;
 
 public class ControlIntake extends Command {
+  
+  //Adam code start 
+  static boolean pressed = false;
+  //Adam code end
+
   public ControlIntake() {
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
@@ -26,6 +31,23 @@ public class ControlIntake extends Command {
     Robot.intake.setIntake(-RobotMap.baseIntakeSpeed);
     else
     Robot.intake.setIntake(0);
+
+    //Adam's code (hello Declan)
+    //Yes, it's stupid, but the if statements have to be in this order to work
+    // if (!(Robot.oi.getYButton()) && !(Robot.oi.getAButton())) {
+    //   pressed = false;
+    // } else if (Robot.oi.getYButton() && !pressed) {
+    //   pressed = true;
+    //   if (RobotMap.baseIntakeSpeed < 1)
+    //     RobotMap.baseIntakeSpeed += 0.05;
+    //   System.out.println("Intake speed: " + Math.round(100*RobotMap.baseIntakeSpeed) + "%");
+    // } else if (Robot.oi.getAButton() && !pressed) {
+    //   pressed = true;
+    //   if (RobotMap.baseIntakeSpeed > 0.01)
+    //     RobotMap.baseIntakeSpeed -= 0.05;
+    //   System.out.println("Intake speed: " + Math.round(100*RobotMap.baseIntakeSpeed) + "%");
+    // }
+    
   }
 
   // Make this return true when this Command no longer needs to run execute()

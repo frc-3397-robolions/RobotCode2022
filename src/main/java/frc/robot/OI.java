@@ -27,6 +27,9 @@ public class OI {
   public double getStickX() {
     return xbController.getX(Hand.kLeft);
   }
+  public double getStickY() {
+    return xbController.getY(Hand.kLeft);
+  }
   public double getTriggerTotal() {
     return xbController.getTriggerAxis(Hand.kLeft) - xbController.getTriggerAxis(Hand.kRight);
   }
@@ -35,6 +38,12 @@ public class OI {
   }
   public boolean getBButton(){
     return xbController.getBButton();
+  }
+  public boolean getXButton(){
+    return xbController.getXButton();
+  }
+  public boolean getYButton(){
+    return xbController.getYButton();
   }
 
   //// TRIGGERING COMMANDS WITH BUTTONS

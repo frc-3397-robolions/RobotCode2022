@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import frc.robot.subsystems.Climber;
 import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.Shooter;
@@ -24,6 +25,7 @@ public class Robot extends TimedRobot {
   public static DriveTrain driveTrain;
   public static Shooter shooter;
   public static Intake intake;
+  public static Climber climber;
 
 
   Command m_autonomousCommand;
@@ -39,6 +41,7 @@ public class Robot extends TimedRobot {
     oi = new OI();
     shooter = new Shooter();
     intake = new Intake();
+    climber = new Climber();
   }
 
   /**

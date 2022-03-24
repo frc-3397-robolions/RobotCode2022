@@ -45,6 +45,12 @@ public class OI {
   public boolean getYButton(){
     return xbController.getYButton();
   }
+  public double getLeftTrigger(){
+    return xbController.getTriggerAxis(Hand.kLeft);
+  }
+  public double getRightTrigger(){
+    return xbController.getTriggerAxis(Hand.kRight);
+  }
 
   //// TRIGGERING COMMANDS WITH BUTTONS
   // Once you have a button, it's trivial to bind it to a button in one of

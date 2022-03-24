@@ -27,10 +27,7 @@ public class ControlIntake extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    if (Robot.oi.getBButton())
-    Robot.intake.setIntake(-RobotMap.baseIntakeSpeed);
-    else
-    Robot.intake.setIntake(0);
+    Robot.intake.setIntake(-RobotMap.baseIntakeSpeed*Robot.oi.getRightTrigger());
 
     //Adam's code (hello Declan)
     //Yes, it's stupid, but the if statements have to be in this order to work

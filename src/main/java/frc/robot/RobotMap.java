@@ -20,7 +20,7 @@ public class RobotMap {
 	public static final int frontRightChannel = 1;
 	public static final int rearLeftChannel = 2;
   public static final int frontLeftChannel = 3;
-  //#TODO set shooter channels to real values
+  //#TODO set all channels to real values
   public static final int shooterChannel1 = 5;
   public static final int shooterChannel2 = 6;
   public static final int intakeChannel = 4;

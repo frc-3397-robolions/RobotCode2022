@@ -27,7 +27,7 @@ public class ControlIntake extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    Robot.intake.setIntake(-RobotMap.baseIntakeSpeed*Robot.oi.getRightTrigger());
+    Robot.intake.setIntake(RobotMap.baseIntakeSpeed*(-Robot.oi.getRightTrigger()+Robot.oi.getLeftTrigger()));
 
     //Adam's code (hello Declan)
     //Yes, it's stupid, but the if statements have to be in this order to work

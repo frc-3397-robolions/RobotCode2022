@@ -51,6 +51,12 @@ public class OI {
   public double getRightTrigger(){
     return xbController.getTriggerAxis(Hand.kRight);
   }
+  public boolean getLeftBumper(){
+    return xbController.getBumper(Hand.kLeft);
+  }
+  public boolean getRightBumper(){
+    return xbController.getBumper(Hand.kRight);
+  }
 
   //// TRIGGERING COMMANDS WITH BUTTONS
   // Once you have a button, it's trivial to bind it to a button in one of

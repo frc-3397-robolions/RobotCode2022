@@ -16,18 +16,24 @@ public class RobotMap {
   // public static int leftMotor = 1;
   // public static int rightMotor = 2;
 
-	public static final int rearRightChannel = 0;
-	public static final int frontRightChannel = 1;
-	public static final int rearLeftChannel = 2;
-  public static final int frontLeftChannel = 3;
+
+  // PWM Channels
+	public static final int rearRightChannel = 3;
+	public static final int frontRightChannel = 5;
+	public static final int rearLeftChannel = 4;
+  public static final int frontLeftChannel = 6;
   //#TODO set all channels to real values
-  public static final int shooterChannel1 = 5;
-  public static final int shooterChannel2 = 6;
-  public static final int intakeChannel = 4;
-  public static final int climberChannel = 4;
-	public static final int xbControllerPort = 0;
+  public static final int shooterChannel1 = 0;
+  public static final int shooterChannel2 = 1;
+  public static final int intakeChannel = 7;
+  public static final int climberChannel = 2;
+// PWM Channels - end
+
+  public static final int xbControllerPort = 0;
+  
+  
   public static double baseDriveSpeed = 0.5;
-  public static double baseShootSpeed = 1;
+  public static double baseShootSpeed = 0.6;
   public static double baseIntakeSpeed = 0.5;
   public static double baseClimbSpeed = 1;
 

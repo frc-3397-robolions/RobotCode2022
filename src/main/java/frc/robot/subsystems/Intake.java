@@ -21,7 +21,7 @@ public class Intake extends Subsystem {
   intakeController.setInverted(false);
   }
   public void setIntake(double speed){
-    intakeController.set(speed);
+    intakeController.set(-speed);
   }
 
   @Override

@@ -22,8 +22,10 @@ public class ControlClimber extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    if(Robot.oi.getXButton())
+    if(Robot.oi.getRightBumper())
     Robot.climber.setClimber(RobotMap.baseClimbSpeed);
+    else if(Robot.oi.getLeftBumper())
+    Robot.climber.setClimber(-RobotMap.baseClimbSpeed);
     else
     Robot.climber.setClimber(0);
   }
